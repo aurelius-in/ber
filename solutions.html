@@ -5,43 +5,56 @@
   <title>Robotic Solutions | Blue Eagle Robotics</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       background-color: #ffffff;
       color: #333;
-      text-align: center;
     }
 
     header {
-      padding: 30px 10px 10px;
+      background-color: #9b4eb3;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
 
     .logo {
-      max-width: 120px;
-      margin-bottom: 10px;
+      max-width: 150px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      color: #9b4eb3; /* Purple from original screenshot */
-      font-size: 2em;
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    p.subtitle {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 40px 20px;
     }
 
     table {
-      margin: 30px auto;
+      width: 100%;
       border-collapse: collapse;
-      width: 80%;
-      max-width: 900px;
+      margin: 0 auto;
+      max-width: 1200px;
     }
 
     th, td {
-      border: 1px solid #ccc;
-      padding: 12px 16px;
-      font-size: 1em;
+      border: 1px solid #ddd;
+      padding: 16px 20px;
+      text-align: left;
+      vertical-align: top;
     }
 
     th {
       background-color: #f0d2f7;
       color: #000;
+      font-size: 1.1em;
     }
 
     tr:nth-child(even) {
@@ -55,19 +68,36 @@
     .button {
       background-color: #e698f7;
       color: black;
-      padding: 12px 24px;
+      padding: 14px 28px;
       text-decoration: none;
       display: inline-block;
-      margin: 30px auto;
+      margin: 40px auto;
       font-weight: bold;
       border: none;
       cursor: pointer;
       font-size: 1em;
       border-radius: 6px;
+      text-align: center;
     }
 
     .button:hover {
       background-color: #d07ce5;
+    }
+
+    @media (max-width: 768px) {
+      th, td {
+        padding: 12px 14px;
+        font-size: 0.95em;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .button {
+        padding: 12px 24px;
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
@@ -76,38 +106,82 @@
   <header>
     <img src="BER_logo.png" alt="BER Logo" class="logo">
     <h1>Robotic Solutions by Blue Eagle</h1>
-    <p>Advancing Automation Through Intelligence and Precision</p>
+    <p class="subtitle">Advancing Automation Through Intelligence and Precision</p>
   </header>
 
-  <table>
-    <tr>
-      <th>Solution</th>
-      <th>Category</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>Falcon Arm</td>
-      <td>Robotic Arm</td>
-      <td>High-precision multi-axis robotic arm for industrial automation.</td>
-    </tr>
-    <tr>
-      <td>HawkSight</td>
-      <td>Vision System</td>
-      <td>AI-powered computer vision system for object detection and navigation.</td>
-    </tr>
-    <tr>
-      <td>BlueMind OS</td>
-      <td>AI Software</td>
-      <td>Intelligent robotics control software with ML-based adaptive behaviors.</td>
-    </tr>
-    <tr>
-      <td>GuardianBot</td>
-      <td>Humanoid Robot</td>
-      <td>Autonomous humanoid robot built for logistics and human collaboration.</td>
-    </tr>
-  </table>
+  <main>
+    <table>
+      <tr>
+        <th>BER Solution</th>
+        <th>Category</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>BER Falcon Arm</td>
+        <td>Robotic Arm</td>
+        <td>High-precision multi-axis robotic arm designed for complex industrial automation tasks, offering adaptability and seamless integration into existing workflows.</td>
+      </tr>
+      <tr>
+        <td>BER HawkSight</td>
+        <td>Vision System</td>
+        <td>AI-powered computer vision system enabling real-time object detection and navigation, enhancing robotic perception in dynamic environments.</td>
+      </tr>
+      <tr>
+        <td>BER BlueMind OS</td>
+        <td>AI Software</td>
+        <td>Intelligent robotics control software utilizing machine learning for adaptive behaviors, optimizing performance across various applications.</td>
+      </tr>
+      <tr>
+        <td>BER GuardianBot</td>
+        <td>Humanoid Robot</td>
+        <td>Autonomous humanoid robot designed for logistics and human collaboration, capable of navigating diverse environments with precision.</td>
+      </tr>
+      <tr>
+        <td>BER Sentinel Drone</td>
+        <td>Aerial Surveillance</td>
+        <td>Autonomous drone system equipped with advanced sensors for real-time aerial monitoring, suitable for security and inspection tasks.</td>
+      </tr>
+      <tr>
+        <td>BER TerraCrawler</td>
+        <td>Ground Vehicle</td>
+        <td>All-terrain autonomous ground vehicle designed for exploration and data collection in challenging environments.</td>
+      </tr>
+      <tr>
+        <td>BER NeuroBlink Interface</td>
+        <td>Human-Machine Interface</td>
+        <td>Advanced interface facilitating seamless communication between humans and machines, enhancing control and feedback mechanisms.</td>
+      </tr>
+      <tr>
+        <td>BER OptiGrasp</td>
+        <td>Gripping Mechanism</td>
+        <td>Adaptive gripping technology allowing robots to handle objects of varying shapes and sizes with precision and care.</td>
+      </tr>
+      <tr>
+        <td>BER EchoNav</td>
+        <td>Navigation System</td>
+        <td>Robust navigation system integrating multiple sensors and AI algorithms to enable accurate pathfinding in complex terrains.</td>
+      </tr>
+      <tr>
+        <td>BER AutoAssembler</td>
+        <td>Manufacturing Robot</td>
+        <td>High-speed assembly robot capable of performing intricate manufacturing tasks with consistency and efficiency.</td>
+      </tr>
+      <tr>
+        <td>BER BioCleanse Bot</td>
+        <td>Sanitation Robot</td>
+        <td>Autonomous robot designed for sterilization and cleaning in medical and laboratory settings, ensuring hygiene and safety.</td>
+      </tr>
+      <tr>
+        <td>BER AgriBot</td>
+        <td>Agricultural Robot</td>
+        <td>Smart farming robot equipped with sensors and tools for planting, monitoring, and harvesting crops, optimizing agricultural productivity.</td>
+      </tr>
+    </table>
 
-  <a href="http://BlueEagleRobotics.com" class="button">Return to Home</a>
+    <div style="text-align: center;">
+      <a href="http://BlueEagleRobotics.com" class="button">Return to Home</a>
+    </div>
+  </main>
 
 </body>
 </html>
