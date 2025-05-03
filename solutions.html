@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Robotic Solutions | Blue Eagle Robotics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotic Solutions | Blue Eagle Robotics</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,15 +14,13 @@
 
     header {
       background-color: #ffffff;
-      color: #333;
       padding: 40px 20px 20px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     .logo {
-      max-width: 150px;
-      margin-bottom: 15px;
+      max-width: 140px;
+      margin-bottom: 10px;
     }
 
     h1 {
@@ -32,55 +30,54 @@
     }
 
     p.subtitle {
-      font-size: 1.3em;
-      margin-top: 10px;
+      font-size: 1.2em;
       color: #4a4a4a;
+      margin-top: 10px;
     }
 
-    main {
-      padding: 40px 20px;
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 16px;
     }
 
-    .table-wrapper {
-      overflow-x: auto;
+    .solution-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
+      overflow: hidden;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      max-width: 1200px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      margin: auto;
-      font-size: 1.05em;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 20px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background-color: #e1c8f0;
+    .solution-header {
+      background-color: #d69df5;
       color: #000;
-      font-weight: bold;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
     }
 
-    tr:nth-child(even) {
-      background-color: #faf6fc;
+    .solution-header span {
+      font-weight: 400;
+      font-size: 0.95em;
+      margin-top: 4px;
+      color: #333;
     }
 
-    tr:hover {
-      background-color: #f0e4f8;
+    .solution-description {
+      padding: 20px;
+      font-size: 1.05em;
+      line-height: 1.6;
+      text-align: left;
     }
 
     .button {
       background-color: #ba68c8;
       color: white;
-      padding: 16px 32px;
+      padding: 14px 28px;
       text-decoration: none;
       display: inline-block;
       margin: 40px auto;
@@ -90,33 +87,25 @@
       font-size: 1.1em;
       border-radius: 6px;
       text-align: center;
-      transition: background-color 0.3s ease;
     }
 
     .button:hover {
       background-color: #9b4eb3;
     }
 
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2em;
+    .button-wrapper {
+      text-align: center;
+    }
+
+    @media (min-width: 600px) {
+      .solution-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      p.subtitle {
-        font-size: 1.1em;
-      }
-
-      table {
-        font-size: 1.1em;
-      }
-
-      th, td {
-        padding: 16px 12px;
-      }
-
-      .button {
-        padding: 14px 24px;
-        font-size: 1em;
+      .solution-header span {
+        margin-top: 0;
       }
     }
   </style>
@@ -129,81 +118,121 @@
     <p class="subtitle">Advancing Automation Through Intelligence and Precision</p>
   </header>
 
-  <main>
-    <div class="table-wrapper">
-      <table>
-        <tr>
-          <th>BER Solution</th>
-          <th>Category</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td>BER Falcon Arm</td>
-          <td>Robotic Arm</td>
-          <td>The BER Falcon Arm is a high-precision, multi-axis robotic arm engineered for intricate industrial automation tasks. Its advanced kinematics and real-time adaptive control enable seamless integration into diverse manufacturing environments, enhancing productivity and reducing operational costs.</td>
-        </tr>
-        <tr>
-          <td>BER HawkSight</td>
-          <td>Vision System</td>
-          <td>BER HawkSight is an AI-powered computer vision system that provides real-time object detection and navigation capabilities. Utilizing deep learning algorithms, it enhances robotic perception, allowing for accurate identification and interaction with dynamic environments.</td>
-        </tr>
-        <tr>
-          <td>BER BlueMind OS</td>
-          <td>AI Software</td>
-          <td>BER BlueMind OS is an intelligent robotics control software that leverages machine learning to facilitate adaptive behaviors. It enables robots to learn from their environment, optimizing performance across various applications and ensuring efficient task execution.</td>
-        </tr>
-        <tr>
-          <td>BER GuardianBot</td>
-          <td>Humanoid Robot</td>
-          <td>BER GuardianBot is an autonomous humanoid robot designed for logistics and human collaboration. Equipped with advanced sensors and AI, it navigates complex environments with precision, performing tasks ranging from material handling to customer interaction.</td>
-        </tr>
-        <tr>
-          <td>BER Sentinel Drone</td>
-          <td>Aerial Surveillance</td>
-          <td>BER Sentinel Drone is an autonomous aerial system equipped with advanced sensors for real-time surveillance and inspection. Its capabilities include high-resolution imaging and AI-driven analytics, making it ideal for security and infrastructure monitoring.</td>
-        </tr>
-        <tr>
-          <td>BER TerraCrawler</td>
-          <td>Ground Vehicle</td>
-          <td>BER TerraCrawler is an all-terrain autonomous ground vehicle designed for exploration and data collection in challenging environments. Its robust design and intelligent navigation systems ensure reliable operation across diverse terrains.</td>
-        </tr>
-        <tr>
-          <td>BER NeuroBlink Interface</td>
-          <td>Human-Machine Interface</td>
-          <td>BER NeuroBlink Interface is an advanced HMI that facilitates seamless communication between humans and machines. Utilizing intuitive controls and real-time feedback, it enhances user interaction and operational efficiency in complex systems.</td>
-        </tr>
-        <tr>
-          <td>BER OptiGrasp</td>
-          <td>Gripping Mechanism</td>
-          <td>BER OptiGrasp is an adaptive gripping technology that allows robots to handle objects of varying shapes and sizes with precision. Its intelligent force control and tactile sensing ensure secure and delicate manipulation, reducing the risk of damage.</td>
-        </tr>
-        <tr>
-          <td>BER EchoNav</td>
-          <td>Navigation System</td>
-          <td>BER EchoNav is a robust navigation system that integrates multiple sensors and AI algorithms to enable accurate pathfinding in complex terrains. It ensures efficient and safe navigation for autonomous robots in dynamic environments.</td>
-        </tr>
-        <tr>
-          <td>BER AutoAssembler</td>
-          <td>Manufacturing Robot</td>
-          <td>BER AutoAssembler is a high-speed assembly robot capable of performing intricate manufacturing tasks with consistency and efficiency. Its precision and adaptability make it an asset in modern production lines, enhancing throughput and quality.</td>
-        </tr>
-        <tr>
-          <td>BER BioCleanse Bot</td>
-          <td>Sanitation Robot</td>
-          <td>BER BioCleanse Bot is an autonomous robot designed for sterilization and cleaning in medical and laboratory settings. Utilizing advanced disinfection technologies, it ensures hygiene and safety by eliminating pathogens effectively.</td>
-        </tr>
-        <tr>
-          <td>BER AgriBot</td>
-          <td>Agricultural Robot</td>
-          <td>BER AgriBot is a smart farming robot equipped with sensors and tools for planting, monitoring, and harvesting crops. It optimizes agricultural productivity by providing real-time data and automating labor-intensive tasks.</td>
-        </tr>
-      </table>
+  <div class="container">
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER Falcon Arm <span>Robotic Arm</span>
+      </div>
+      <div class="solution-description">
+        A high-precision, multi-axis robotic arm engineered for intricate industrial automation. Features real-time kinematics, seamless integration, and adaptive torque control for next-gen manufacturing.
+      </div>
     </div>
 
-    <div style="text-align: center;">
-      <a href="http://BlueEagleRobotics.com" class="button">Return to Home</a>
+    <div class="solution-card">
+      <div class="solution-header">
+        BER HawkSight <span>Vision System</span>
+      </div>
+      <div class="solution-description">
+        An AI-powered vision system that performs real-time object detection, tracking, and spatial analysis. Ideal for autonomous robots navigating complex or dynamic environments.
+      </div>
     </div>
-  </main>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER BlueMind OS <span>AI Software</span>
+      </div>
+      <div class="solution-description">
+        The core intelligence platform behind Blue Eagle robots. Enables on-device learning, cloud synchronization, decision modeling, and adaptive planning across robotic ecosystems.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER GuardianBot <span>Humanoid Robot</span>
+      </div>
+      <div class="solution-description">
+        A semi-autonomous humanoid designed for warehouse, healthcare, and frontline collaboration. Performs manual tasks and communicates naturally using gesture and voice.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER Sentinel Drone <span>Aerial Surveillance</span>
+      </div>
+      <div class="solution-description">
+        Fixed-wing and quadrotor drone solutions for aerial inspections, perimeter security, and remote sensing. Integrated LIDAR and AI classification in real-time.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER TerraCrawler <span>Ground Vehicle</span>
+      </div>
+      <div class="solution-description">
+        Rugged, all-terrain UGV built for defense, agriculture, and hazardous site missions. Autonomous waypoint navigation, modular payload mounts, and sensor fusion.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER NeuroBlink Interface <span>Human-Machine Interface</span>
+      </div>
+      <div class="solution-description">
+        A brain-inspired interface that bridges humans and machines. Combines haptics, neural input, and intent prediction to reduce training time and maximize control.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER OptiGrasp <span>Gripping Mechanism</span>
+      </div>
+      <div class="solution-description">
+        Multi-surface, adaptive gripper with built-in pressure sensors and compliance algorithms. Designed for fragile, deformable, or irregularly shaped objects.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER EchoNav <span>Navigation System</span>
+      </div>
+      <div class="solution-description">
+        SLAM-based localization with LIDAR, GPS, IMU, and sonar support. Enables real-time map creation, route prediction, and obstacle avoidance under uncertainty.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER AutoAssembler <span>Manufacturing Robot</span>
+      </div>
+      <div class="solution-description">
+        An intelligent robotic assembler for electronics, consumer goods, and automotive parts. High-speed precision with integrated visual inspection and task queuing.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER BioCleanse Bot <span>Sanitation Robot</span>
+      </div>
+      <div class="solution-description">
+        A UV and chemical cleaning robot for hospitals, labs, and food processing plants. Schedules cycles autonomously and logs performance via secure cloud dashboards.
+      </div>
+    </div>
+
+    <div class="solution-card">
+      <div class="solution-header">
+        BER AgriBot <span>Agricultural Robot</span>
+      </div>
+      <div class="solution-description">
+        Designed for precision farming: performs crop health monitoring, targeted spraying, and autonomous harvesting. Powered by computer vision and soil data analytics.
+      </div>
+    </div>
+
+    <div class="button-wrapper">
+      <a href="https://blueeaglerobotics.com" class="button">Return to Home</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
