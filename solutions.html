@@ -7,30 +7,33 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #ffffff;
+      background-color: #f3e6f8; /* soft lavender page background */
       color: #333;
     }
 
     header {
-      background-color: #9b4eb3;
-      color: white;
-      padding: 40px 20px;
+      background-color: #ffffff; /* white banner for clean logo appearance */
+      color: #333;
+      padding: 40px 20px 20px;
       text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     .logo {
       max-width: 150px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     h1 {
       font-size: 2.5em;
       margin: 0;
+      color: #6a1b9a;
     }
 
     p.subtitle {
       font-size: 1.2em;
       margin-top: 10px;
+      color: #4a4a4a;
     }
 
     main {
@@ -42,32 +45,36 @@
       border-collapse: collapse;
       margin: 0 auto;
       max-width: 1200px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 
     th, td {
       border: 1px solid #ddd;
-      padding: 16px 20px;
+      padding: 20px;
       text-align: left;
       vertical-align: top;
     }
 
     th {
-      background-color: #f0d2f7;
+      background-color: #e1c8f0;
       color: #000;
       font-size: 1.1em;
     }
 
     tr:nth-child(even) {
-      background-color: #f9f1fc;
+      background-color: #faf6fc;
     }
 
     tr:hover {
-      background-color: #f0d2f7;
+      background-color: #f0e4f8;
     }
 
     .button {
-      background-color: #e698f7;
-      color: black;
+      background-color: #ba68c8;
+      color: white;
       padding: 14px 28px;
       text-decoration: none;
       display: inline-block;
@@ -78,15 +85,16 @@
       font-size: 1em;
       border-radius: 6px;
       text-align: center;
+      transition: background-color 0.3s ease;
     }
 
     .button:hover {
-      background-color: #d07ce5;
+      background-color: #9b4eb3;
     }
 
     @media (max-width: 768px) {
       th, td {
-        padding: 12px 14px;
+        padding: 14px;
         font-size: 0.95em;
       }
 
